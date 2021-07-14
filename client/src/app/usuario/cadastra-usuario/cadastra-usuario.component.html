@@ -1,0 +1,10 @@
+
+    <mat-card>
+        <form>
+            <mat-form-field appearance="fill">
+                <mat-label>Nome</mat-label>
+                <input matInput type="text" [(ngModel)]="usuario.nome" name="nome">
+            </mat-form-field>
+        </form>
+        <button mat-raised-button color="primary" (click)="cadastraUsuario()">Cadastrar Usuário</button>
+    </mat-card>
