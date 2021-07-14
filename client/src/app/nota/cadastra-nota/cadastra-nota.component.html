@@ -1,0 +1,19 @@
+<mat-card>
+    <form>
+        <mat-form-field appearance="fill">
+            <mat-label>Usuário</mat-label>
+            <input matInput type="text" [(ngModel)]="nomeUsuario" name="usuario" disabled>
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Disciplina</mat-label>
+            <input matInput type="text" [(ngModel)]="nota.disciplina" name="disciplina">
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+            <mat-label>Nota</mat-label>
+            <input matInput type="text" [(ngModel)]="nota.valorNota" name="valorNota">
+        </mat-form-field>
+    </form>
+    <button mat-raised-button color="primary" (click)="cadastraNota()">Cadastrar Nota</button>
+</mat-card>
